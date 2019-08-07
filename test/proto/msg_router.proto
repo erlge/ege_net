@@ -1,0 +1,4 @@
+// cmd 必须是小写
+enum cmd {
+    msg_base = 0; // 心跳
+}

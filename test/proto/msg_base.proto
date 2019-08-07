@@ -1,0 +1,17 @@
+
+enum c_cmd {
+    heartbeat_req = 0;
+    heartbeat_resp = 1;
+}
+
+service msg_base_service {
+    rpc heartbeat (heartbeat_req) returns (heartbeat_resp);
+}
+
+// 心跳
+message heartbeat_req {
+    required uint64 id = 1;
+}
+message heartbeat_resp {
+    required uint64 id = 1;
+}

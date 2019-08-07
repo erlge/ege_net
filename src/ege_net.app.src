@@ -1,0 +1,14 @@
+{application, ege_net, [
+    {vsn, "0.1.0"},
+    {description, "Erlang Game Engine Network Layer."},
+    {registered, []},
+    {applications, [
+        kernel, stdlib, sasl, ssl, crypto,
+        gproc, recon, cowboy, parse_trans
+    ]},
+    {env, []},
+    {mod, {ege_net_app, []}},
+    {modules, []},
+    {maintainers, ["feng19"]},
+    {links, []}
+]}.
