@@ -24,7 +24,7 @@ distclean: test_clean
 ###===================================================================
 ### check
 ###===================================================================
-.PHONY: check lint elvis dialyzer xref
+.PHONY: check lint dialyzer xref
 
 check: lint xref dialyzer test
 
